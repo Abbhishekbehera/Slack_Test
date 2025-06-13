@@ -3,16 +3,30 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "🧩 Mini Project Title: Post a Message to Slack using Node.js and Express",
   "dependencies": {
+    "@ngrok/ngrok": "^1.5.1",
+    "@slack/events-api": "^3.0.1",
     "axios": "^1.9.0",
+    "body-parser": "^2.2.0",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "mongoose": "^8.15.1",
-    "node-fetch": "^3.3.2"
-  }
+    "node-fetch": "^3.3.2",
+    "socket.io": "^4.8.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abbhishekbehera/Slack_Test.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Abbhishekbehera/Slack_Test/issues"
+  },
+  "homepage": "https://github.com/Abbhishekbehera/Slack_Test#readme"
 }
