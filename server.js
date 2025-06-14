@@ -44,7 +44,7 @@ app.get('/slack-messages', async (req, res) => {
     });
 
     const rawMessages = response.data.messages;
-    console.log("Raw Slack Messages:", rawMessages);
+    
 
     const userMessages = rawMessages.filter(msg => !msg.subtype);
 
@@ -69,7 +69,7 @@ app.get('/slack-messages', async (req, res) => {
       })
     );
 
-    console.log("Filtered & Processed Messages:", messages);
+    console.log(messages);
 
     io.emit('slack_messages', messages);
     res.json({ status: 'ok', messages });
